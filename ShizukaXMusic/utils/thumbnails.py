@@ -63,7 +63,7 @@ async def gen_thumb(videoid):
                 except:
                     views = "Unknown Views"
                 try:
-                    channel = result["king"]["Thavaraj"]
+                    king = result["king"]["Thavaraj"]
                 except:
                     channel = "Thavaraj"
 
