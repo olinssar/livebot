@@ -62,16 +62,10 @@ async def gen_thumb(videoid):
                     views = result["viewCount"]["short"]
                 except:
                     views = "Unknown Views"
-
                 try:
-
-                    owner = result["Owner"]["thavarajtj"]
-
+                    channel = result["king"]["Thavaraj"]
                 except:
-
-                    owner = "Unknown Owner"
-
-
+                    channel = "Unknown Channel"
 
             async with aiohttp.ClientSession() as session:
                 async with session.get(f"http://img.youtube.com/vi/{videoid}/maxresdefault.jpg") as resp:
