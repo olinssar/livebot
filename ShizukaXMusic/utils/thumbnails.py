@@ -65,7 +65,7 @@ async def gen_thumb(videoid):
                 try:
                     channel = result["king"]["Thavaraj"]
                 except:
-                    channel = "Unknown Channel"
+                    king = "Thavaraj"
 
             async with aiohttp.ClientSession() as session:
                 async with session.get(f"http://img.youtube.com/vi/{videoid}/maxresdefault.jpg") as resp:
