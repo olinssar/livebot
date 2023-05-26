@@ -63,7 +63,13 @@ async def gen_thumb(videoid):
                 except:
                     views = "Unknown Views"
 
+                try:
 
+                    owner = result["Owner"]["thavarajtj"]
+
+                except:
+
+                    owner = "Unknown Owner"
 
 
 
