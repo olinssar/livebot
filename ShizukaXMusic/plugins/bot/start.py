@@ -84,7 +84,7 @@ async def start_comm(client, message: Message, _):
                     details = stats.get(vidid)
                     title = (details["title"][:35]).title()
                     if vidid == "telegram":
-                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/Best_FriendsFor_Ever) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/Alinallmovies) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
                     else:
                         msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
                 msg = _["ustats_2"].format(tot, tota, limit) + msg
@@ -270,13 +270,13 @@ async def welcome(client, message: Message):
             return
 
 
-@app.on_message(commandpro(["/alive", "Shizuka"]) & ~filters.edited)
+@app.on_message(commandpro(["/alive"]) & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://te.legra.ph/file/0d048443e85813227f253.jpg",
-        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, {MUSIC_BOT_NAME} ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/its_star_boi) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━
+        caption=f""""**» ᴘᴏɴɢ ᴍʏ ʟᴏᴠᴇ ​🌹 «**\n`🌋 {0} ᴍs`\n\n<b><u>{1} sʏsᴛᴇᴍ sᴛᴀᴛs :</u></b>\n\n🌋 ᴜᴩᴛɪᴍᴇ : {2} \n🌋 ʀᴀᴍ : {3} \n🌋 ᴄᴩᴜ : {4} \n🌋 ᴅɪsᴋ : {5} \n🌋 ᴩʏ-ᴛɢᴄᴀʟʟs : `{6} ᴍs`\n🌹 **sᴇʀᴠᴇʀ** : @Best_FriendsFor_Ever"
 """,
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🌼 sʜɪᴢᴜᴋᴀ ᴄʜᴀᴛ 💮", url=f"https://t.me/Star_X_Support")]]
+            [[InlineKeyboardButton("🌼 ᴄʜᴀᴛ 💮", url=f"https://t.me/Alinallmoviies")]]
         ),
     )
