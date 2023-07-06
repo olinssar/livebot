@@ -90,7 +90,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/itz-star-boi/ShizukaXMusic",
+        "value": "https://github.com/Megalalon/ShizukaXMusic2",
         "required": true
       },
       "UPSTREAM_BRANCH": {
