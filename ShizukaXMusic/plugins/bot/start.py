@@ -270,13 +270,4 @@ async def welcome(client, message: Message):
             return
 
 
-@app.on_message(commandpro(["/alive"]) & ~filters.edited)
-async def start(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://te.legra.ph/file/0d048443e85813227f253.jpg",
-        caption=f""""**» ᴘᴏɴɢ ᴍʏ ʟᴏᴠᴇ ​🌹 «**\n`🌋 {0} ᴍs`\n\n<b><u>{1} sʏsᴛᴇᴍ sᴛᴀᴛs :</u></b>\n\n🌋 ᴜᴩᴛɪᴍᴇ : {2} \n🌋 ʀᴀᴍ : {3} \n🌋 ᴄᴩᴜ : {4} \n🌋 ᴅɪsᴋ : {5} \n🌋 ᴩʏ-ᴛɢᴄᴀʟʟs : `{6} ᴍs`\n🌹 **sᴇʀᴠᴇʀ** : @Best_FriendsFor_Ever"
-""",
-        reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🌼 ᴄʜᴀᴛ 💮", url=f"https://t.me/Alinallmoviies")]]
-        ),
-    )
+
