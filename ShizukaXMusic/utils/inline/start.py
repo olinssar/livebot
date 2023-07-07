@@ -12,8 +12,7 @@ def start_pannel(_):
             InlineKeyboardButton(
                 text=_["S_B_5"],
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-            ),
-            InlineKeyboardButton(text=_["S_B_2"], callback_data="settings_helper"),
+    
         ],
     ]
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
@@ -60,6 +59,8 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             InlineKeyboardButton(
                 text=_["S_B_1"],
                 url=f"https://t.me/{app.username}?start=help",
+             ),
+            InlineKeyboardButton(text=_["S_B_2"], callback_data="settings_helper"),
             )
         ]
     )
