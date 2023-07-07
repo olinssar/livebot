@@ -1,5 +1,5 @@
 # Bot Commands
-PING_COMMAND : ["ping"]
+PING_COMMAND : ["ping", "alive"]
 START_COMMAND : ["start"]
 HELP_COMMAND : ["help"]
 SETTINGS_COMMAND : ["settings", "setting"]
