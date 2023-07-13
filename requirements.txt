@@ -19,6 +19,7 @@ pyyaml==5.4
 requests
 speedtest-cli
 spotipy
+telethon==1.24.0
 tgcrypto
 numpy
 youtube-search
