@@ -1,4 +1,4 @@
-from VipX import app 
+from ShizukaXMusic import app 
 import asyncio
 
 from pyrogram import Client, filters
