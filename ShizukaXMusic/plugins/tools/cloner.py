@@ -1,4 +1,3 @@
-from ShizukaXMusic import HANDLER ShizukaXMusic
 from telethon import TelegramClient, events
 from config import API_ID, API_HASH
 import sys
