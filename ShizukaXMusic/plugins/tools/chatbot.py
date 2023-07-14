@@ -10,13 +10,6 @@ import time
 from datetime import datetime
 #from database.users_chats_db import db
 
-app = Client(
-    "VickBot" ,
-    api_id = API_ID,
-    api_hash = API_HASH ,
-    bot_token = BOT_TOKEN
-)
-
 
 async def is_admins(chat_id: int):
     return [
