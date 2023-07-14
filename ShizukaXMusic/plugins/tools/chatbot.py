@@ -20,7 +20,7 @@ BOT_USERNAME = os.environ.get("BOT_USERNAME")
 BOT_NAME = os.environ.get("BOT_NAME")
 ADMINS = os.environ.get("ADMINS")
 
-bot = Client(
+app = Client(
     "VickBot" ,
     api_id = API_ID,
     api_hash = API_HASH ,
@@ -45,7 +45,7 @@ START = f"""
 **๏ Hie Baby🐒 ๏**
 """
 
-@bot.on_message(filters.command(["start", "aistart", f"start@{BOT_USERNAME}"]))
+@app.on_message(filters.command(["start", "aistart", f"start@{BOT_USERNAME}"]))
 async def restart(client, m: Message):
     accha = await m.reply_text(
                 text = random.choice(EMOJIOS),
@@ -66,7 +66,7 @@ async def restart(client, m: Message):
     await accha.edit("╔═══❰𝐖𝐄𝐋𝐂𝐎𝐌𝐄❱═══❍⊱❁۪۪\n║\n║➣ @THE_VIP_BOY\n║\n║➣ @TG_FRIENDSS\n║\n║➣ @VIP_CREATORS\n║\n╚══════ஜ۩۞۩ஜ═════╝")
      
 
-@bot.on_message(
+@app.on_message(
     filters.command(["chatbot off", f"chatbot@{BOT_USERNAME} off"], prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def chatbotofd(client, message):
@@ -89,7 +89,7 @@ async def chatbotofd(client, message):
         await message.reply_text(f"ChatBot Already Disabled")
     
 
-@bot.on_message(
+@app.on_message(
     filters.command(["chatbot on", f"chatbot@{BOT_USERNAME} on"] ,prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def chatboton(client, message):
@@ -112,14 +112,14 @@ async def chatboton(client, message):
         await message.reply_text(f"ChatBot Enabled!")
     
 
-@bot.on_message(
+@app.on_message(
     filters.command(["chatbot", f"chatbot@{BOT_USERNAME}"], prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def chatbot(client, message):
     await message.reply_text(f"**ᴜsᴀɢᴇ:**\n/**chatbot [on/off]**\n**ᴄʜᴀᴛ-ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ(s) ᴡᴏʀᴋ ɪɴ ɢʀᴏᴜᴘ ᴏɴʟʏ!**")
 
 
-@bot.on_message(
+@app.on_message(
  (
         filters.text
         | filters.sticker
@@ -185,7 +185,7 @@ async def vickai(client: Client, message: Message):
                    chatai.insert_one({"word": message.reply_to_message.text, "text": message.text, "check": "none"})    
                
 
-@bot.on_message(
+@app.on_message(
  (
         filters.sticker
         | filters.text
@@ -252,7 +252,7 @@ async def vickstickerai(client: Client, message: Message):
                
 
 
-@bot.on_message(
+@app.on_message(
     (
         filters.text
         | filters.sticker
@@ -295,7 +295,7 @@ async def vickprivate(client: Client, message: Message):
                await message.reply_text(f"{hey}")
        
 
-@bot.on_message(
+@app.on_message(
  (
         filters.sticker
         | filters.text
