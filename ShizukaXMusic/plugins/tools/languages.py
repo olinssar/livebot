@@ -9,44 +9,16 @@ from ShizukaXMusic.utils.database import get_lang, set_lang
 from ShizukaXMusic.utils.decorators import ActualAdminCB, language, languageCB
 
 # Languages Available
-
-
 def lanuages_keyboard(_):
     keyboard = InlineKeyboard(row_width=2)
     keyboard.row(
         InlineKeyboardButton(
-            text="🇦🇺 ᴇɴɢʟɪsʜ 🇦🇺",
+            text="• العربية 🇾🇪",
             callback_data=f"languages:en",
         ),
         InlineKeyboardButton(
-            text="🇮🇳 हिन्दी 🇮🇳",
-            callback_data=f"languages:hi",
-        ),
-    )
-    keyboard.row(
-        InlineKeyboardButton(
-            text="🇱🇰 සිංහල 🇱🇰",
-            callback_data=f"languages:si",
-        ),
-        InlineKeyboardButton(
-            text="🇦🇿 Azərbaycan 🇦🇿",
-            callback_data=f"languages:az",
-        ),
-    )
-    keyboard.row(
-        InlineKeyboardButton(
-            text="🇮🇳 ગુજરાતી 🇮🇳",
+             text="• ᴇɴɢʟɪsʜ 🇾🇪",
             callback_data=f"languages:gu",
-        ),
-        InlineKeyboardButton(
-            text="🇹🇷 Türkiye Türkçesi 🇹🇷",
-            callback_data=f"languages:tr",
-        ),
-    )
-    keyboard.row(
-        InlineKeyboardButton(
-            text="🐕 ᴄʜᴇᴇᴍs 🐕",
-            callback_data=f"languages:cheems",
         ),
     )
     keyboard.row(
@@ -57,10 +29,7 @@ def lanuages_keyboard(_):
         InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=f"close"),
     )
     return keyboard
-
-
 LANGUAGE_COMMAND = get_command("LANGUAGE_COMMAND")
-
 
 @app.on_message(
     filters.command(LANGUAGE_COMMAND) & filters.group & ~filters.edited & ~BANNED_USERS
