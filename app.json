@@ -1,7 +1,7 @@
 {
-    "name": "Shizuka Music Bot",
+    "name": "❤️⁪⁬ǫᴜʀᴀɴ ʟɪᴠᴇ❤️",
     "description": "Shizuka Is A Telegram Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://te.legra.ph/file/798b7275e58d09ac6b095.jpg",
+    "logo": "https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -45,7 +45,7 @@
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "5463205082",
+        "value": "5422153027",
         "required": true
       },
       "STRING_SESSION": {
@@ -55,12 +55,12 @@
       },
       "SUPPORT_GROUP": {
         "description": "Your Support Group link ",
-        "value": "https://t.me/Star_X_Support",
+        "value": "https://t.me/NKINB",
         "required": false
       },
       "SUPPORT_CHANNEL": {
         "description": "Your Updates Channel link",
-        "value": "https://t.me/Star_X_Network",
+        "value": "https://t.me/NNINB",
         "required": false
       },
       "PING_IMG_URL": {
@@ -90,7 +90,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/Megalalon/ShizukaXMusic2",
+        "value": "https://github.com/olinssar/NNINBOT",
         "required": true
       },
       "UPSTREAM_BRANCH": {
