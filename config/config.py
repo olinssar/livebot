@@ -7,8 +7,8 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", "12688949"))
-API_HASH = getenv("API_HASH", "dd43b0926db0fc730f80409e6c193454")
+API_ID = int(getenv("API_ID", "25710552"))
+API_HASH = getenv("API_HASH", "1f08de6bf83142a21f8601dd08d2a84c")
 
 BOT_TOKEN = getenv("BOT_TOKEN")
 
@@ -18,23 +18,23 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "900"))
 
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID",""))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
-OWNER_ID = list(map(int, getenv("OWNER_ID", "").split()))
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","⁪⁬ǫᴜʀᴀɴ ʟɪᴠᴇ")
+OWNER_ID = list(map(int, getenv("OWNER_ID","5422153027").split()))
 HEROKU_API_KEY = getenv("HEROKU_API_KEY") 
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/itz-star-boi/ShizukaXMusic",
+    "https://github.com/olinssar/NNINBOT",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/https://github.com/Murugabotsown/ShizukaXMusic")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/olinssar/NNINBOT")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Star_X_Network")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Star_X_Support")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/NNINB")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/NKINB")
 
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
@@ -80,7 +80,7 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/f576595d249f645c886fc.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
@@ -134,9 +134,9 @@ if UPSTREAM_REPO:
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://telegra.ph/file/56d1760224589ee370186.jpg"
+            PING_IMG_URL = "https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg"
 
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://te.legra.ph/file/56d1760224589ee370186.jpg"
+            START_IMG_URL = "https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg"
