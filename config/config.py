@@ -27,10 +27,10 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/olinssar/NNINBOT",
+    "https://github.com/olinssar/livebot",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/olinssar/NNINBOT")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/olinssar/livebot")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/NNINB")
