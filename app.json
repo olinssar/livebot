@@ -90,7 +90,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/olinssar/NNINBOT",
+        "value": "https://github.com/olinssar/livebot",
         "required": true
       },
       "UPSTREAM_BRANCH": {
