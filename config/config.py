@@ -19,7 +19,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 BOT_ID = getenv("BOT_ID")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 UPSTREAM_REPO = getenv(
-"UPSTREAM_REPO","https://github.com/olinssar/livebot3",)
+"UPSTREAM_REPO","https://github.com/olinssar/livebot",)
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH","main")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL","https://t.me/NNINB")
