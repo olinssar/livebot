@@ -83,7 +83,7 @@
         "value": "",
         "required": true
       },
-      "UPSTREAM_REPO": {
+          "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
         "value": "https://github.com/olinssar/livebot",
         "required": true
