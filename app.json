@@ -1,7 +1,7 @@
 {
     "name": "❤️⁪⁬ǫᴜʀᴀɴ ʟɪᴠᴇ❤️",
     "description": "kindi Is A Telegram Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg",
+    "logo": "https://kindidev.com/live/photo_quran.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -35,7 +35,7 @@
       },
       "MUSIC_BOT_NAME": {
         "description": "A name for your Music Bot. You can use special characters bot ko jhaat farak ni padega",
-        "value": "⁪⁬",
+        "value": "⁪⁬乛ǫᴜʀᴀɴ ʟɪᴠᴇ⁪⁬",
         "required": true
       },
       "OWNER_ID": {
@@ -60,12 +60,12 @@
       },
       "PING_IMG_URL": {
         "description": "The pic which will be shown when you give the /ping cmd to the bot.",
-        "value": "",
+        "value": "https://kindidev.com/live/photo_quran.jpg",
         "required": false
       },
       "START_IMG_URL": {
         "description": "The pic which will be shown when you /start the bot in private.",
-        "value": "",
+        "value": "https://kindidev.com/live/photo_quran.jpg",
         "required": false
       },
       "HEROKU_API_KEY": {
@@ -80,7 +80,7 @@
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
-        "value": "",
+        "value": "-1001657259154",
         "required": true
       },
           "UPSTREAM_REPO": {
