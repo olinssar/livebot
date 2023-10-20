@@ -21,7 +21,7 @@ UPSTREAM_REPO = getenv(
     "https://github.com/olinssar/livebot",
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/NNINB")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/TH3NK")
 SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/NKINB")
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
 AUTO_LEAVE_ASSISTANT_TIME = int(getenv("ASSISTANT_LEAVE_TIME", "11500"))
@@ -58,7 +58,7 @@ chatstats = {}
 userstats = {}
 clean = {}
 autoclean = []
-START_IMG_URL = getenv("START_IMG_URL","https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg")
+START_IMG_URL = getenv("START_IMG_URL","https://kindidev.com/live/photo_quran.jpg")
 PING_IMG_URL = getenv("PING_IMG_URL","https://te.legra.ph/file/159d3f9e2d57dd02db970.jpg",)
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/6054be6dbfc0f654db62b.jpg"
 GLOBAL_IMG_URL = "https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg"
@@ -91,9 +91,9 @@ if UPSTREAM_REPO:
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg"
+            PING_IMG_URL = "https://kindidev.com/live/photo_quran.jpg"
 
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg"
+            START_IMG_URL = "https://kindidev.com/live/photo_quran.jpg"
