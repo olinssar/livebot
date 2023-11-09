@@ -268,15 +268,13 @@ async def welcome(client, message: Message):
             return
         except:
             return
-api_my = json_decode(file_get_contents("https://kindidev.com/my"),true);
-rights =api_my["rights"];
-echo '<span style="background-color: red;">' . rights . '</span><br>';
+
 
 @app.on_message(commandpro(["/quran", "bot"]) & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://kindidev.com/live/photo_quran.jpg",
-        caption=f"""**rights ⌔︙ <u>اهلا وسهلا بك في</u>, {MUSIC_BOT_NAME}** \n\n**⌔︙ لتشغيل القران الكريم في القنوات والمجموعات التابعة لمنصة تليجرام \n**⌔︙ تم انشاء البوت بجهد كبير من اجل هذا المشروع الديني\n**⌔︙ يدعم ايضا تشغيل الصوت والفيديو مع ميزة البث المباشر .. \n\n**⌔︙ ❲ [قناة تحديثات السورس](https://t.me/TH3NK) ❳.
+        caption=f"""**⌔︙ <u>اهلا وسهلا بك في</u>, {MUSIC_BOT_NAME}** \n\n**⌔︙ لتشغيل القران الكريم في القنوات والمجموعات التابعة لمنصة تليجرام \n**⌔︙ تم انشاء البوت بجهد كبير من اجل هذا المشروع الديني\n**⌔︙ يدعم ايضا تشغيل الصوت والفيديو مع ميزة البث المباشر .. \n\n**⌔︙ ❲ [قناة تحديثات السورس](https://t.me/TH3NK) ❳.
         ).
 """,
         reply_markup=InlineKeyboardMarkup(
