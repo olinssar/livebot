@@ -268,6 +268,16 @@ async def welcome(client, message: Message):
             return
         except:
             return
+@app.on_message(commandpro(["/quran", "bot"]) & ~filters.edited)
+async def start(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://te.legra.ph/file/0d048443e85813227f253.jpg",
+        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, {MUSIC_BOT_NAME} ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/5422153027) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━
+""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🌼 قناة التحديثات 💮", url=f"https://t.me/https://t.me/TH3NK")]]
+        ),
+    )
 
 
 @app.on_message(commandpro(["/ali", "بوت"]) & ~filters.edited)
@@ -278,6 +288,6 @@ async def start(client: Client, message: Message):
         ).
 """,
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🌼 sʜɪᴢᴜᴋᴀ ᴄʜᴀᴛ 💮", url=f"SUPPORT_CHANNEL")]]
+            [[InlineKeyboardButton("🌼 sʜɪᴢᴜᴋᴀ ᴄʜᴀᴛ 💮", url=f"https://t.me/{app.username}")]]
         ),
     )
